@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/mydb" driverClass="com.mysql.jdbc.Driver" 
+    	password="123456" userId="root" />
+    <javaModelGenerator targetPackage="security.core.entity" targetProject="security-core" />
+    <sqlMapGenerator targetPackage="security.core.mapper" targetProject="security-core" />
+    <javaClientGenerator targetPackage="security.core.mapper" targetProject="security-core" type="XMLMAPPER" />
+    <table schema="mydb" tableName="t_user_principal" domainObjectName="TUserPrincipal">
+      <generatedKey column="id" sqlStatement="MySql" identity="true" />
+      <columnOverride column="credential" property="password"/>
+      <columnOverride column="lock" property="lock" jdbcType="TINYINT" javaType="Boolean"></columnOverride>
+    </table>
+    <table schema="mydb" tableName="t_permission" domainObjectName="TPermission">
+      <generatedKey column="id" sqlStatement="MySql" identity="true" />
+    </table>
+    <table schema="mydb" tableName="t_role" domainObjectName="TRole">
+      <generatedKey column="id" sqlStatement="MySql" identity="true" />
+    </table>
+  </context>
+</generatorConfiguration>

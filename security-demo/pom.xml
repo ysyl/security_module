@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>verrickt.security</groupId>
+  <artifactId>security-demo</artifactId>
+  <packaging>war</packaging>
+  <name>security-demo Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+    	<groupId>verrickt.pom</groupId>
+    	<artifactId>springMVC.pom</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    	<type>pom</type>
+    </dependency>
+    <dependency>
+    	<groupId>verrickt.pom</groupId>
+    	<artifactId>test.pom</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    	<type>pom</type>
+    </dependency>
+    <dependency>
+    	<groupId>org.verrickt.security</groupId>
+    	<artifactId>security-core</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>verrickt.pom</groupId>
+    	<artifactId>mybatis.pom</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    	<type>pom</type>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>security-demo</finalName>
+  </build>
+  <parent>
+  	<groupId>org.verrickt.security</groupId>
+  	<artifactId>security-all</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  	<relativePath>../security-all</relativePath>
+  </parent>
+</project>
