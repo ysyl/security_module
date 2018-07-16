@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Repository;
 
+import security.core.DTO.UserDetailsImp;
 import security.core.mapper.TUserPrincipalMapper;
 
 @Repository
@@ -20,7 +21,7 @@ public class UserDetailsDAO {
 		this.tUserPrincipalMapper = tUserPrincipalMapper;
 	}
 
-	public UserDetails selectByUsername(String username) {
+	public UserDetailsImp selectByUsername(String username) {
 		// TODO Auto-generated method stub
 		return tUserPrincipalMapper.selectUserDetailsByUsername(username);
 	}

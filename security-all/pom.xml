@@ -31,6 +31,6 @@
   </build>
   <modules>
   	<module>../security-core</module>
-  	<module>../security-demo</module>
+  	
   </modules>
 </project>
