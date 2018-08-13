@@ -11,7 +11,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
     </authentication-provider>
   </authentication-manager>
   
-  <beans:bean id="userDetailsServiceImp" class="security.core.serviceImp.UserDetailsServiceImp" />
+  <beans:bean id="userDetailsServiceImp" class="security.core.service.UserDetailsServiceImp" />
   <beans:bean name="bcryptEncoder"
     class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
 </beans:beans>

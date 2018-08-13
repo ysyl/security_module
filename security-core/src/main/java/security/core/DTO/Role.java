@@ -1,8 +1,9 @@
 package security.core.DTO;
 
 import java.io.Serializable;
+import org.springframework.security.core.GrantedAuthority;
 
-public class Role implements Serializable {
+public class Role  implements Serializable, GrantedAuthority {
 
 	/**
 	 * 
@@ -27,5 +28,11 @@ public class Role implements Serializable {
 
 	public void setRoleName(String roleName) {
 		this.roleName = roleName;
+	}
+
+	@Override
+	public String getAuthority() {
+		// TODO Auto-generated method stub
+		return this.roleName;
 	}
 }

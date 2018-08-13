@@ -10,7 +10,7 @@
     <table schema="mydb" tableName="t_user_principal" domainObjectName="TUserPrincipal">
       <generatedKey column="id" sqlStatement="MySql" identity="true" />
       <columnOverride column="credential" property="password"/>
-      <columnOverride column="lock" property="lock" jdbcType="TINYINT" javaType="Boolean"></columnOverride>
+      <columnOverride column="is_lock" property="lock" jdbcType="TINYINT" javaType="Boolean"></columnOverride>
     </table>
     <table schema="mydb" tableName="t_permission" domainObjectName="TPermission">
       <generatedKey column="id" sqlStatement="MySql" identity="true" />
